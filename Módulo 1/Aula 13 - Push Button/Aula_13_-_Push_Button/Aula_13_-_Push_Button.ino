@@ -38,6 +38,6 @@ void loop() {
   /* Enquanto o botão estiver pressionado, não faça mais nada.  */
   while (digitalRead(Pino_Botao) == HIGH);{
   }
-  /* Pequena pausa para realizar outra verificação no botão.    */
+  /* Pequena pausa antes de realizar outra verificação no botão.*/
   delay(100);
 }
