@@ -1,0 +1,10 @@
+####################################################################################################
+#                                                                                                  #
+# Extensão obrigatória para utilizar o código de programação do display 7 Segmentos com 4 Dígitos. #
+#                                                                                                  #
+#    Como instalar?                                                                                #
+#                                                                                                  #
+#    Com o software mBlock aberto, simplesmente arraste o arquivo da extensão "tm1637.mext" para a #
+# área branca da janela do software. Após isso, poderá abrir o código do display normalmente.      #
+#                                                                                                  #
+####################################################################################################

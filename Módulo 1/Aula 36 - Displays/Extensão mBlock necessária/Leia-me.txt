@@ -1,0 +1,11 @@
+################################################################################
+#                                                                              #
+# Extensão obrigatória para utilizar o código de programação da trena digital. #
+#                                                                              #
+#    Como instalar?                                                            #
+#                                                                              #
+#    Com o software mBlock aberto, simplesmente arraste o arquivo da extensão  #
+# "oled.mext" para a área branca da janela do software. Após isso, poderá      #
+# abrir o código da trena digital normalmente.                                 #
+#                                                                              #
+################################################################################
