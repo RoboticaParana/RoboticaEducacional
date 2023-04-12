@@ -18,6 +18,7 @@ void setup() {
   pinMode(LED_Amarelo_2, OUTPUT);
   pinMode(LED_Verde_2, OUTPUT);
 }
+
 void loop() {
   /* Primeiro estágio: Semáforo 1 ABERTO e Semáforo 2 FECHADO (5 segundos) */
   digitalWrite(LED_Vermelho_1, LOW);
