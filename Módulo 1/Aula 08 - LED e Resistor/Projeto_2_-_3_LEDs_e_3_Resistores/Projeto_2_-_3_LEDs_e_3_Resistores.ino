@@ -1,27 +1,19 @@
 /* Projeto 2: Ligando três LEDs com três resistores */
-
-/* Definições para os pinos dos LEDs                */
-#define Pin_led1 8
-#define Pin_led2 9
-#define Pin_led3 10
-
+int Pin_led1 = 8; /* Define o controle do LED 1 através do  pino 8. */
+int Pin_led2 = 9; /* Define o controle do LED 2 através do  pino 9. */
+int Pin_led3 = 10; /* Define o controle do LED 3 através do  pino 10. */
 void setup() {
-  /* Configura os pinos LEDs como SAÍDA.           */
-  pinMode(Pin_led1, OUTPUT);
-  pinMode(Pin_led2, OUTPUT);
-  pinMode(Pin_led3, OUTPUT);
+  pinMode(Pin_led1, OUTPUT); /* Define o pino de controle do  LED 1 como SAÍDA. */
+  pinMode(Pin_led2, OUTPUT); /* Define o pino de controle do  LED 2 como SAÍDA. */
+  pinMode(Pin_led3, OUTPUT); /* Define o pino de controle do  LED 3 como SAÍDA. */
 }
 void loop() {
-  /* Liga os  LEDs                                 */
-  digitalWrite(Pin_led1, HIGH);
-  digitalWrite(Pin_led2, HIGH);
-  digitalWrite(Pin_led3, HIGH);
-  /* Aguarda 1 segundo                             */
-  delay(1000);
-  /* Desliga os LEDs                               */
-  digitalWrite(Pin_led1, LOW);
-  digitalWrite(Pin_led2, LOW);
-  digitalWrite(Pin_led3, LOW);
-  /* Aguarda 1 segundo                             */
-  delay(1000);
+  digitalWrite(Pin_led1, HIGH); /* Energiza o pino 8 (liga o  LED 1). */
+  digitalWrite(Pin_led2, HIGH); /* Energiza o pino 9 (liga o  LED 2). */
+  digitalWrite(Pin_led3, HIGH); /* Energiza o pino 10 (liga o  LED 3). */
+  delay(1000); /* Aguarda 1 segundo. */
+  digitalWrite(Pin_led1, LOW); /* Desenergiza o pino 8  (desliga o LED 1). */
+  digitalWrite(Pin_led2, LOW); /* Desenergiza o pino 9  (desliga o LED 2). */
+  digitalWrite(Pin_led3, LOW); /* Desenergiza o pino 10  (desliga o LED 3). */
+  delay(1000); /* Aguarda 1 segundo. */
 }

@@ -1,6 +1,4 @@
-/* Código de Funcionamento para um Semáforo Cruzamento Carros Pedestres  */
-
-/* Definições para os pinos dos LEDs                                     */
+/* Define as portas de todos os LEDs */
 #define LED_Carro_Verde_1 2
 #define LED_Carro_Amarelo_1 3
 #define LED_Carro_Vermelho_1 4
@@ -13,7 +11,7 @@
 #define LED_Pedestre_Vermelho_2 12
 void setup()
 {
-  /* Configura os pinos LEDs como SAÍDA                  */
+  /* Define os pinos de todos os LEDs como SAÍDA */
   pinMode(LED_Carro_Verde_1, OUTPUT);
   pinMode(LED_Carro_Amarelo_1, OUTPUT);
   pinMode(LED_Carro_Vermelho_1, OUTPUT);
@@ -27,6 +25,17 @@ void setup()
 }
 void loop()
 {
+  /* Inicia o loop com todos os LEDs desligados */
+  digitalWrite(LED_Carro_Verde_1, LOW);
+  digitalWrite(LED_Carro_Amarelo_1, LOW);
+  digitalWrite(LED_Carro_Vermelho_1, LOW);
+  digitalWrite(LED_Pedestre_Verde_1, LOW);
+  digitalWrite(LED_Pedestre_Vermelho_1, LOW);
+  digitalWrite(LED_Carro_Verde_2, LOW);
+  digitalWrite(LED_Carro_Amarelo_2, LOW);
+  digitalWrite(LED_Carro_Vermelho_2, LOW);
+  digitalWrite(LED_Pedestre_Verde_2, LOW);
+  digitalWrite(LED_Pedestre_Vermelho_2, LOW);
   /* PRIMEIRO ESTÁGIO (5 SEGUNDOS).
       LED_Carro_Verde_1:       LIGADO
       LED_Carro_Amarelo_1:     DESLIGADO
@@ -52,7 +61,7 @@ void loop()
   /* SEGUNDO ESTÁGIO (3 SEGUNDOS).
       LED_Carro_Verde_1:       DESLIGADO
       LED_Carro_Amarelo_1:     LIGADO
-      LED_Carro_Vermelho_1:    DESLIGADO
+     LED_Carro_Vermelho_1:    DESLIGADO
       LED_Pedestre_Verde_1:    DESLIGADO
       LED_Pedestre_Vermelho_1: LIGADO
       LED_Carro_Verde_2:       DESLIGADO

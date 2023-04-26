@@ -32,18 +32,18 @@ void loop() {
   /* Imprime a porcentagem de umidade no Monitor Serial.    */
   Serial.print(Porcento);
   /* Imprime o símbolo % junto ao valor da porcentagem.     */
-  Serial.println("%");
+  Serial.print("%. ");
   /* Se a porcentagem for menor ou igual à 45, faz...       */
   if (Porcento <= 45) {
     /* Imprime a frase no Monitor Serial.                   */
-    Serial.println("Irrigando a planta ...");
+    Serial.println("Irrigação ATIVADA...");
     /* Altera o estado do pinoRele para nível lógico Alto.  */
     digitalWrite(pinoRele, HIGH);
   }
   /* Senão...                                               */
   else { 
     /* Imprime a frase no Monitor Serial.                   */
-    Serial.println("Planta Irrigada ...");
+    Serial.println("Irrigação DESATIVADA...");
     /* Altera o estado do pinoRele para nível lógico Baixo. */
     digitalWrite(pinoRele, LOW);
   }

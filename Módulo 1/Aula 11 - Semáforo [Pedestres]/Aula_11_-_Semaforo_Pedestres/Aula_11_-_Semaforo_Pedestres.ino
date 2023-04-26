@@ -1,14 +1,13 @@
-/* Código de Funcionamento para um Semáforo de Pedestres  */
+/* Declaração de variáveis */
+int led_vermelho_ped = 3;
+int led_verde_ped = 4;
+int led_vermelho_car = 5;
+int led_amarelo_car = 6;
+int led_verde_car = 7;
 
-/* Definições para os pinos dos LEDs                      */
-#define led_vermelho_ped 3
-#define led_verde_ped 4
-#define led_vermelho_car 5
-#define  led_amarelo_car 6
-#define led_verde_car 7
 
 void setup() {
-  /* Configura os pinos LEDs como SAÍDA                  */
+  /* Configurando os pinos dos LEDs como saída */
   pinMode(led_vermelho_ped, OUTPUT);
   pinMode(led_verde_ped, OUTPUT);
   pinMode(led_vermelho_car, OUTPUT);
@@ -16,16 +15,17 @@ void setup() {
   pinMode(led_verde_car, OUTPUT);
 }
 
+/* Bloco Principal onde está toda a execução das ações do programa */
 void loop() {
   /* Primeiro estágio: Aberto para os carros e fechado para os pedestres */
   digitalWrite(led_vermelho_ped, 1);
   digitalWrite(led_verde_car, 1);
   delay(5000);
-  /* Atenção para os carros (LED amarelo ligado por 1 segundo)           */
+  /* Atenção para os carros (LED amarelo ligado por 1 segundo) */
   digitalWrite(led_amarelo_car, 1);
   digitalWrite(led_verde_car, 0);
   delay(1000);
-  /* Segundo estágio: Aberto para os pedestres e fechado para os carros  */
+  /* Segundo estágio: Aberto para os pedestres e fechado para os carros */
   digitalWrite(led_vermelho_car, 1);
   digitalWrite(led_amarelo_car, 0);
   digitalWrite(led_vermelho_ped, 0);

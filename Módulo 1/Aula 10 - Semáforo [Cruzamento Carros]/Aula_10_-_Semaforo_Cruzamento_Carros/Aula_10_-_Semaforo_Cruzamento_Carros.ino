@@ -1,16 +1,16 @@
 /* Código de Funcionamento para um Semáforo de Cruzamento */
-
-/* Define as portas dos LEDs do semáforo 1                */
-#define LED_Vermelho_1 4
+/* Define as portas dos LED’s do semáforo 1 */
+#define LED_Vermelho_1 2
 #define LED_Amarelo_1 3
-#define LED_Verde_1 2
-/* Define as portas dos LEDs do semáforo 2                */
-#define LED_Vermelho_2 7
+#define LED_Verde_1 4
+/* Define as portas dos LED’s do semáforo 2 */
+#define LED_Vermelho_2 5
 #define LED_Amarelo_2 6
-#define LED_Verde_2 5
+#define LED_Verde_2 7
+
 
 void setup() {
-  /* Define todos os pinos dos LEDs como SAÍDA            */
+  /* Define todos os pinos dos LED’s como SAÍDA */
   pinMode(LED_Vermelho_1, OUTPUT);
   pinMode(LED_Amarelo_1, OUTPUT);
   pinMode(LED_Verde_1, OUTPUT);
@@ -18,7 +18,6 @@ void setup() {
   pinMode(LED_Amarelo_2, OUTPUT);
   pinMode(LED_Verde_2, OUTPUT);
 }
-
 void loop() {
   /* Primeiro estágio: Semáforo 1 ABERTO e Semáforo 2 FECHADO (5 segundos) */
   digitalWrite(LED_Vermelho_1, LOW);
