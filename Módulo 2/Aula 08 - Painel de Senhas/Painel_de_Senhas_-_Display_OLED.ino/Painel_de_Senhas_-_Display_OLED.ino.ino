@@ -3,10 +3,10 @@
 /*                                             */
 /* Programação do projeto Painel de Senhas.    */
 /* Ao transferir o código abaixo para seu      */
-/* Arduino, será apresentado no Display LCD a  */
+/* Arduino, será apresentado no Display OLED a */
 /* senha requisitada. Ao pressionar os botões, */
 /* a senha é atualizada para mais ou para      */
-/* menos, sempre indicada por um sinal sonoro. */
+/* menos, sempre acompanhada por um sinal sonoro. */
 /***********************************************/
 /* Baixe a biblioteca através do link abaixo   */
 /*                                             */
@@ -14,7 +14,7 @@
 /* Biblioteca: Adafuit SSD1306 by Adafruit     */
 /*                                             */
 /* http://librarymanager/All#GFX#class#that    */
-/* Biblioteca: Adafuit GFX Library by Adafruit */
+/* Biblioteca: Adafruit GFX Library by Adafruit*/
 /***********************************************/
 /* Inclusão das duas bibliotecas necessárias.  */
 #include <Adafruit_SSD1306.h>
