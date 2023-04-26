@@ -5,8 +5,8 @@
 /* Ao transferir o código abaixo para seu      */
 /* Arduino, será apresentado no Display OLED a */
 /* senha requisitada. Ao pressionar os botões, */
-/* a senha é atualizada para mais ou para      */
-/* menos, sempre acompanhada por um sinal sonoro. */
+/* a senha é atualizada para mais ou para menos*/
+/* sempre acompanhada por um sinal sonoro.     */
 /***********************************************/
 /* Baixe a biblioteca através do link abaixo   */
 /*                                             */
